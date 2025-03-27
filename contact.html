@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevitha Ranjani M C - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <main class="main-container">
+        <div class="portfolio-container">
+            <!-- Left Sidebar -->
+            <div class="sidebar">
+                <div class="avatar-container">
+                    <img src="https://via.placeholder.com/80" alt="Avatar" class="avatar">
+                </div>
+                
+                <div class="profile-info">
+                    <h1 class="name">Jeevitha Ranjani M C</h1>
+                    <div class="job-title">Full Stack Web developer</div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i data-feather="mail" class="icon"></i>
+                        </div>
+                        <div>
+                            <div class="label">EMAIL</div>
+                            <div class="value">jeevimadheswaran06@gmail.com</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i data-feather="phone" class="icon"></i>
+                        </div>
+                        <div>
+                            <div class="label">PHONE</div>
+                            <div class="value">+91 7305961737</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i data-feather="calendar" class="icon"></i>
+                        </div>
+                        <div>
+                            <div class="label">BIRTHDAY</div>
+                            <div class="value">April 06, 2002</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="icon-container">
+                            <i data-feather="map-pin" class="icon"></i>
+                        </div>
+                        <div>
+                            <div class="label">LOCATION</div>
+                            <div class="value">Coimbatore,<br>Tamil Nadu, India</div>
+                        </div>
+                    </div>  
+
+                    <h3><a href="YOUR_LINK_HERE" class="project-link1"><img src="assets/img/download.png"width="25px;"height="25px;" style="margin-bottom: -5px;">Resume</a></h3>
+
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="main-content" >
+                <!-- Navigation -->
+                <div class="navigation">
+                    <nav class="nav-links">
+                        <a href="index.html" class="nav-link">About</a>
+                        <a href="skill.html" class="nav-link">Skills</a>
+                        <a href="port.html" class="nav-link">Project</a>
+                        <!-- <a href="#" class="nav-link">Certifications</a> -->
+                        <a href="contact.html" class="nav-link active" >Contact</a>
+                    </nav>
+                </div>
+                
+                <!-- Content -->
+                <div class="content" style="height: 435px; overflow-y: scroll;">
+                    <!-- About Me Section -->   
+
+                    <section class="section">
+                        <h2 class="section-title">Contact Form</h2>
+                        <div class="title-underline"></div>
+                    
+                        <form class="contact-form">
+                            <div class="input-group">
+                                <input type="text" class="input-field" placeholder="Full name">
+                                <input type="email" class="input-field" placeholder="Email address">
+                            </div>
+                            <textarea class="textarea-field" placeholder="Your Message"></textarea>
+                            <button type="submit" class="submit-btn">
+                                <i data-feather="send"></i> Send Message
+                            </button>
+                        </form>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+        
+        // Add active class to current navigation link
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
